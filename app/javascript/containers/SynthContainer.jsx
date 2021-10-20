@@ -28,7 +28,7 @@ export default class SynthContainer extends PureComponent {
   }
 
   initInstruments = () => {
-    Tone.Transport.bpm.value = 240
+    Tone.Transport.bpm.value = 260
     Tone.Transport.start()
 
     melodySynth.part.start()

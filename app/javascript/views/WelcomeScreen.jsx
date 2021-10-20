@@ -13,7 +13,7 @@ export default class WelcomeScreen extends PureComponent {
 
     return (
       <div className="WelcomeScreen">
-        <Button text="Start" handleClick={handleStartWebAudio} />
+        <Button text="Ready?" handleClick={handleStartWebAudio} />
       </div>
     )
   }

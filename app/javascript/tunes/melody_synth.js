@@ -22,11 +22,11 @@ const synthSettings = {
   }
 }
 
-const chebyshevSettings = {
-  wet: 0,
-  order: 50,
-  oversample: 'none'
-}
+// const chebyshevSettings = {
+//   wet: 0,
+//   order: 50,
+//   oversample: 'none'
+// }
 
 const pingPongDelaySettings = {
   wet: 0,
@@ -49,22 +49,45 @@ const channelSettings = {
   pan: 0
 }
 
-const chebyshevNode = new Tone.Chebyshev(chebyshevSettings)
+const freeverbSettings = {
+  wet: 0.55,
+  roomSize: 0.23,
+  dampening: 40
+}
+
+// const tremoloSettings = {
+//   wet: 0,
+//   frequency: 10,
+//   type: 'sine',
+//   depth: 0.5,
+//   spread: 180
+// }
+
+// const chebyshevNode = new Tone.Chebyshev(chebyshevSettings)
 const pingPongDelayNode = new Tone.PingPongDelay(pingPongDelaySettings)
 const autoWahNode = new Tone.AutoWah(autoWahSettings)
 const channelNode = new Tone.Channel(channelSettings).toDestination()
 const synthNode = new Tone.Synth(synthSettings)
+const freeverbNode = new Tone.Freeverb(freeverbSettings)
+// const tremoloNode = new Tone.Tremolo(tremoloSettings)
 
-synthNode.chain(chebyshevNode, pingPongDelayNode, autoWahNode, channelNode)
+synthNode.chain(
+  // chebyshevNode,
+  pingPongDelayNode,
+  autoWahNode,
+  channelNode,
+  freeverbNode
+  // tremoloNode
+)
 
 const instrument = [
-  {
-    id: generateUniqId(),
-    name: 'Chebyshev',
-    type: 'ChebyshevEffect',
-    node: chebyshevNode,
-    settings: chebyshevSettings
-  },
+  // {
+  //   id: generateUniqId(),
+  //   name: 'Chebyshev',
+  //   type: 'ChebyshevEffect',
+  //   node: chebyshevNode,
+  //   settings: chebyshevSettings
+  // },
   {
     id: generateUniqId(),
     name: 'Ping Pong Delay',
@@ -94,6 +117,20 @@ const instrument = [
     node: synthNode,
     settings: synthSettings
   }
+  // {
+  //   id: generateUniqId(),
+  //   name: 'Freeverb',
+  //   type: 'Freeverb',
+  //   node: freeverbNode,
+  //   settings: freeverbSettings
+  // }
+  // {
+  //   id: generateUniqId(),
+  //   name: 'Tremolo',
+  //   type: 'Tremolo',
+  //   node: tremoloNode,
+  //   settings: tremoloSettings
+  // }
 ]
 
 const v = 1

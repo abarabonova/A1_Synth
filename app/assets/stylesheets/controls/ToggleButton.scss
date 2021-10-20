@@ -1,22 +1,25 @@
 .ToggleButton {
-  // margin: 0 4px 4px 0;
-  padding: 8px 10px;
+  width: 23.4%;
   font-size: 20px;
-  text-align: center;
-  text-transform: capitalize;
+
+  border-radius: 6px;
+
+  padding: 4px 8px 32px;
+
   background-color: var(--acid-green);
   color: var(--black);
+
   cursor: pointer;
 
   &:hover:not(.active) {
-    background-color: var(--white);
+    background-color: var(--black);
     filter: brightness(90%);
   }
 
   &.active {
     font-weight: 800;
     color: var(--black);
-    background-color: var(--dark-green);
+    background-color: var(--white);
     cursor: default;
   }
 }

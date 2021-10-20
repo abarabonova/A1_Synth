@@ -1,14 +1,18 @@
 .Button {
-  padding: 8px 10px;
-  font-size: 14px;
+  font-family: 'Pitcrew', sans-serif;
+  font-size: 300px;
+
+  padding: 60px 80px;
   text-align: center;
-  text-transform: capitalize;
-  background-color: var(--white);
-  color: var(--black);
+  border-radius: 20px;
+
+  background-color: var(--acid-green);
+  color: var(--pink);
   cursor: pointer;
 
   &:hover {
-    background-color: var(--white);
-    filter: brightness(90%);
+    color: var(--acid-green);
+    background-color: var(--rave-purple);
+    // background-color: var(--white);
   }
 }
