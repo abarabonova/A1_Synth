@@ -45,7 +45,7 @@ const autoPannerSettings = {
 }
 
 const autoWahSettings = {
-  wet: 0,
+  pedal: 0,
   baseFrequency: 100,
   octaves: 6,
   sensitivity: 0,

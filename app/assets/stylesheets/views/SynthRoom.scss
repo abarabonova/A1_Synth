@@ -114,3 +114,78 @@
     }
   }
 }
+//
+// $breakpoints: (phone: 640px,
+//                tablet: 768px,
+//                desktop: 1024px) !default;
+//
+// @include media(">phone", "<tablet") {
+//   .SynthContainer {
+//     .SynthRoom {
+//       background: white;
+//       width: 100%;
+//     }
+//   }
+// }
+//
+// @include media(">tablet", "<950px") {
+//   .SynthContainer {
+//     .SynthRoom {
+//       background: white;
+//       width: 100%;
+//     }
+//   }
+// }
+//
+
+// #masthead {
+//   background: white;
+//   border-bottom: 1px solid #eee;
+//   height: 90px;
+//   padding: 0 20px;
+// }
+
+@media only screen and (min-width: 667px), only screen and (max-width: 1025px) {
+  .SynthRoom {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+  }
+}
+
+
+// $small: 500px;
+// $medium: 900px;
+// .smth {
+//   //some CSS
+//   @media screen and (max-width: $small) {
+//     .SynthContainer {
+//       .SynthRoom {
+//         background: white;
+//         width: 100%;
+//       }
+//     }
+//   }
+//   @media screen and (min-width: $medium) {
+//     //do Smth
+//   }
+// }
+
+// @media only screen and (max-width : 750px){
+//   .SynthRoom {
+//     background: white;
+//   }
+// }
+
+// @media (max-width: 1291px) {
+//   .SynthRoom {
+//     .Row {
+//       &:first-child {
+//         width: 50.4%;
+//         background: white;
+//       }
+//     }
+//   }
+// }

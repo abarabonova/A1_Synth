@@ -29,13 +29,13 @@ const synthSettings = {
 // }
 
 const pingPongDelaySettings = {
-  wet: 0,
+  pingpong: 0,
   delayTime: 0.25,
   maxDelayTime: 1
 }
 
 const autoWahSettings = {
-  wet: 0,
+  pedal: 0,
   baseFrequency: 100,
   octaves: 6,
   sensitivity: 0,

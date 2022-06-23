@@ -18,3 +18,17 @@
  *= require_tree ./controls
  *= require_tree ./views
  */
+
+@media (max-width: 1300px) {
+  .Row:first-child {
+     width: 50.4%;
+     height: min-content;
+
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+
+     background: var(--rave-purple);
+     border-radius: 20px;
+     padding: 20px;
+  }
+}
