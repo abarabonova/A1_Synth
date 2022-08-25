@@ -10,9 +10,9 @@ export default class PingPongDelayEffect extends Component {
 
   updateNodeParams = () => {
     const { node, settings } = this.props
-    const { pingpong, delayTime, maxDelayTime } = settings
+    const { wet, delayTime, maxDelayTime } = settings
 
-    node.pingpong.value = pingpong
+    node.wet.value = wet
     node.delayTime.value = delayTime
     node.maxDelayTime = maxDelayTime
   }
@@ -24,23 +24,23 @@ export default class PingPongDelayEffect extends Component {
 
   render() {
     const { name, settings } = this.props
-    const { pingpong, delayTime, maxDelayTime } = settings
+    const { wet, delayTime, maxDelayTime } = settings
 
     this.updateNodeParams()
 
     return (
       <div className="PingPongDelayEffect">
         <Slider
-          name="ping pong"
-          property={['pingpong']}
+          name="Ping Pong"
+          property={['wet']}
           min={0}
           max={1}
           step={0.01}
-          value={pingpong}
+          value={wet}
           handleChange={this.handlePropertyValueChange}
         />
         <Slider
-          name="Delay Time"
+          name="Delay"
           property={['delayTime']}
           min={0}
           max={1}
@@ -49,7 +49,7 @@ export default class PingPongDelayEffect extends Component {
           handleChange={this.handlePropertyValueChange}
         />
         <Slider
-          name="Max Delay Time"
+          name="Max Delay"
           property={['maxDelayTime']}
           min={0}
           max={1}

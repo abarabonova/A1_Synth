@@ -35,7 +35,7 @@ export default class PitchShiftEffect extends Component {
     return (
       <div className="PitchShiftEffect">
         <Slider
-          name="Wet"
+          name="Pitch"
           property={['wet']}
           min={0}
           max={1}

@@ -4,6 +4,27 @@
 }
 
 body {
-  font-family: 'PT Root UI';
+  overflow-x: hidden;
   background: var(--black);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--rave-purple);
+  border-radius: 200px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--acid-green);
+  border-radius: 200px;
 }

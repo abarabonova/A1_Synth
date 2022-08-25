@@ -23,3 +23,21 @@
     cursor: default;
   }
 }
+
+@media screen and (max-width: 1290px) {
+  .ToggleButton {
+    width: 23.2%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1110px) {
+  .ToggleButton {
+    width: 22.7%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .ToggleButton {
+    width: 25%;
+  }
+}

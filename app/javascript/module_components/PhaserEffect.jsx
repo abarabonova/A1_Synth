@@ -37,7 +37,7 @@ export default class PhaserEffect extends Component {
     return (
       <div className="PhaserEffect">
         <Slider
-          name="Wet"
+          name="Phaser"
           property={['wet']}
           min={0}
           max={1}
@@ -87,7 +87,7 @@ export default class PhaserEffect extends Component {
         />
 
         <Slider
-          name="Base Frequency"
+          name="Frequency"
           property={['baseFrequency']}
           min={0}
           max={1000}

@@ -45,7 +45,7 @@ const autoPannerSettings = {
 }
 
 const autoWahSettings = {
-  pedal: 0,
+  wet: 0,
   baseFrequency: 100,
   octaves: 6,
   sensitivity: 0,
@@ -107,7 +107,7 @@ const phaserSettings = {
 }
 
 const pingPongDelaySettings = {
-  pingpong: 0,
+  wet: 0,
   delayTime: 0.25,
   maxDelayTime: 1
 }

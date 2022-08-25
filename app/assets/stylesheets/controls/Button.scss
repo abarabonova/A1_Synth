@@ -13,6 +13,37 @@
   &:hover {
     color: var(--acid-green);
     background-color: var(--rave-purple);
-    // background-color: var(--white);
+  }
+}
+
+@media (min-width: 1111px) and (max-width: 1290px) {
+  .Button {
+    font-size: 250px;
+    padding: 46px 80px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1110px) {
+  .Button {
+    font-size: 190px;
+    padding: 46px 80px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .Button {
+    font-size: 60px;
+    padding: 40px 16px;
+    width: 100vw;
+    margin: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .Button {
+    font-size: 60px;
+    padding: 40px 16px;
+    width: 100vw;
+    margin: 12px;
   }
 }

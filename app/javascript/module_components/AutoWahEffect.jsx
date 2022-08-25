@@ -12,7 +12,7 @@ export default class AutoWahEffect extends Component {
     const { node, settings } = this.props
 
     const {
-      pedal,
+      wet,
       baseFrequency,
       octaves,
       sensitivity,
@@ -21,7 +21,7 @@ export default class AutoWahEffect extends Component {
       follower
     } = settings
 
-    node.pedal.value = pedal
+    node.wet.value = wet
     node.baseFrequency = baseFrequency
     node.octaves = octaves
     node.sensitivity = sensitivity
@@ -39,7 +39,7 @@ export default class AutoWahEffect extends Component {
     const { name, settings } = this.props
 
     const {
-      pedal,
+      wet,
       baseFrequency,
       octaves,
       sensitivity,
@@ -53,17 +53,17 @@ export default class AutoWahEffect extends Component {
     return (
       <div className="AutoWahEffect">
         <Slider
-          name="pedal"
-          property={['pedal']}
+          name="repeater"
+          property={['wet']}
           min={0}
           max={1}
           step={0.01}
-          value={pedal}
+          value={wet}
           handleChange={this.handlePropertyValueChange}
         />
 
         <Slider
-          name="Base Frequency"
+          name="Frequency"
           property={['baseFrequency']}
           min={0}
           max={1000}
